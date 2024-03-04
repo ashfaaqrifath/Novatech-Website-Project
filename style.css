@@ -43,6 +43,34 @@ p{
     margin: 40px 0;
 }
 
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    outline: none;
+    transition: 0.2s;
+}
+
+
 body{
     width: 100%;
     /* background-color: #E3E6F3; */
@@ -57,7 +85,8 @@ body{
     padding: 20px 80px;
     background: rgb(255, 255, 255, .1);
     backdrop-filter: blur(20px);
-    box-shadow: 0 8px 20px rgb(179, 179, 179);
+    /* box-shadow: 0 8px 20px rgb(255, 255, 255); */
+    border-bottom: 2px solid rgb(213, 213, 213);
     z-index: 999;
     position: sticky;
     top: 0;
@@ -137,12 +166,18 @@ body{
 }
 
 #hero button{
-    width: 100px;
+    width: 120px;
     height: 50px;
+    background-color: #11e6d8;
     border-radius: 50px;
     cursor: pointer;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 16px;
+}
+
+#hero button:hover{
+    box-shadow: 0 0 8px rgb(0, 191, 255);
+    transition: 0.5s ease;
 }
 
 
@@ -167,7 +202,7 @@ body{
 }
 
 #feature .fe-box:hover{
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 8px rgb(0, 191, 255);
 }
 
 #feature .fe-box img{
@@ -213,7 +248,7 @@ body{
 }
 
 #product1 .pro:hover{
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 8px rgb(0, 191, 255);
 }
 
 #product1 .pro img{
@@ -264,6 +299,60 @@ body{
     padding: 10px;
 }
 
+#product1 .pro .cart:hover{
+    border: 1px solid rgb(0, 191, 255);
+    transition: 0.5s ease;
+}
+
+/* BANNER */
+
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("img/banner/b17.jpg");
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+#sm-banner .banner-box2{
+    background-image: url("img/banner/b10.jpg");
+}
+
+#sm-banner h4{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner h2{
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#sm-banner span{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button{
+    background: #088178;
+    border: 1px solid #088178;
+}
 
 
 
