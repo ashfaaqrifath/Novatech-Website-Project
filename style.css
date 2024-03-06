@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* GLOBAL */
+
 *{
     margin: 0;
     padding: 0;
@@ -43,7 +45,6 @@ p{
     margin: 40px 0;
 }
 
-
 button.normal{
     font-size: 14px;
     font-weight: 600;
@@ -70,12 +71,12 @@ button.white{
     transition: 0.2s;
 }
 
-
 body{
     width: 100%;
     /* background-color: #E3E6F3; */
 }
 
+/* ------------------------------------------------------------- */
 /* HEADER */
 
 #header{
@@ -141,7 +142,7 @@ body{
     left: 20px;
 }
 
-
+/* -------------------------------------------------------- */
 /* HOME PAGE */
 
 #hero{
@@ -181,7 +182,7 @@ body{
     transition: 0.5s ease;
 }
 
-
+/* ----------------------------------------------------------- */
 /* FEATURES */
 
 #feature{
@@ -211,7 +212,6 @@ body{
     margin-bottom: 10px;
 }
 
-
 #feature .fe-box h6{
     display: inline-block;
     padding: 9px 8px 6px 8px;
@@ -221,7 +221,7 @@ body{
     background-color: rgb(255, 0, 0);
 }
 
-
+/* ---------------------------------------------------------- */
 /* PRODUCTS */
 
 #product1{
@@ -305,6 +305,7 @@ body{
     transition: 0.5s ease;
 }
 
+/* --------------------------------------------------------- */
 /* BANNER */
 
 #sm-banner{
@@ -353,6 +354,106 @@ body{
 #sm-banner .banner-box:hover button{
     background: #088178;
     border: 1px solid #088178;
+}
+
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("img/banner/b17.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#banner3 h2{
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#banner3 h3{
+    color: #ff0000;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+/* --------------------------------------------------------- */
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer.follow{
+    margin-top: 20px;
+}
+
+footer .follow i{
+    color: #464646;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img{
+    border: 1px solid #464646;
+    border-radius: 6px;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: #ff0000;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
 }
 
 
