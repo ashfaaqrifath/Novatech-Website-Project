@@ -43,6 +43,13 @@ p{
     padding: 40px 80px;
 }
 
+.section-p1-home{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
 .section-m1{
     margin: 40px 0;
 }
@@ -66,9 +73,9 @@ button.white{
     padding: 11px 18px;
     color: #ffffff;
     background-color: transparent;
-    border-radius: 10px;
+    border-radius: 25px;
     cursor: pointer;
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
     outline: none;
     transition: 0.2s;
 }
@@ -161,28 +168,50 @@ body{
     justify-content: center;
 }
 
+#hero h2{
+    font-size: 115px;
+    font-weight: 610;
+    letter-spacing: 4px;
+    color: #ff0000;
+    padding-bottom: 50px;
+}
+
 #hero h4{
-    padding-bottom: 15px;
+    padding-bottom: 50px;
+    padding-left: 8px;
 }
 
 #hero h1{
-    color: #ff0000;
+    font-size: 75px;
+    letter-spacing: 2px;
+    color: #000000;
+    padding-bottom: 60px;
+    /* padding-bottom: 110px; */
+}
+
+#hero p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #0000009b;
+    position: absolute;
+    bottom: 150px;
+    left: 85px;
 }
 
 #hero button{
-    width: 120px;
-    height: 50px;
+    width: 185px;
+    height: 60px;
     background-color: #ff0000;
     border-radius: 50px;
     cursor: pointer;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     color: #ffffff;
 }
 
 #hero button:hover{
     box-shadow: 0 0 8px rgb(108, 108, 108);
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 }
 
 /* ----------------------------------------------------------- */
@@ -229,6 +258,18 @@ body{
 
 #product1{
     text-align: center;
+}
+
+#product1 .heading1{
+    color: #ff0000;
+    font-size: 75px;
+    font-weight: 650;
+    padding-bottom: 30px;
+}
+
+#product1 .sub1{
+    font-size: 20px;
+    font-weight: 500;
 }
 
 #product1 .pro-container{
@@ -309,7 +350,25 @@ body{
 #product1 .pro .cart:hover{
     color: #ffffff;
     background-color: rgb(255, 0, 0);
-    transition: 0.5s ease;
+    transition: 0.4s ease;
+}
+
+#product1 .shop-btn{
+    width: 185px;
+    height: 60px;
+    border: 2px solid #ff0000;
+    background-color: #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ff0000;
+}
+
+#product1 .shop-btn:hover{
+    background-color: #ff0000;
+    color: #ffffff;
+    transition: 0.4s ease;
 }
 
 
@@ -327,7 +386,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("img/banner/b17.jpg");
+    background-image: url("img/banner/iPhone-15-General-Feature-Black.jpg");
     min-width: 580px;
     height: 50vh;
     background-size: cover;
@@ -337,7 +396,7 @@ body{
 }
 
 #sm-banner .banner-box2{
-    background-image: url("img/banner/b10.jpg");
+    background-image: url("img/banner/galaxy_s23_ultra_green_1685683384322.webp");
 }
 
 #sm-banner h4{
@@ -360,8 +419,8 @@ body{
 }
 
 #sm-banner .banner-box:hover button{
-    background: #088178;
-    border: 1px solid #088178;
+    background: #ff0000;
+    border: 1px solid #ff0000;
 }
 
 #banner3{
@@ -371,12 +430,42 @@ body{
     padding: 0 80px;
 }
 
-#banner3 .banner-box{
+#banner3 .banner-box1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("img/banner/b17.jpg");
+    background-image: url("img/banner/redmibanner.png");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#banner3 .banner-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("img/banner/onebanner.webp");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#banner3 .banner-box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("img/banner/pxbanner.webp");
     min-width: 30%;
     height: 30vh;
     background-size: cover;
@@ -387,7 +476,7 @@ body{
 }
 
 #banner3 h2{
-    color: #ffffff;
+    color: #000000;
     font-weight: 900;
     font-size: 22px;
 }
@@ -398,6 +487,11 @@ body{
     font-size: 15px;
 }
 
+#banner3 h4{
+    font-weight: 500;
+    font-size: 12px;
+}
+
 /* --------------------------------------------------------- */
 /* FOOTER */
 
@@ -405,6 +499,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    /* background-color: #ff5454; */
 }
 
 footer .col{
@@ -421,6 +516,7 @@ footer .logo{
 footer h4{
     font-size: 14px;
     padding-bottom: 20px;
+    color: #ff0000;
 }
 
 footer p{
