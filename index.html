@@ -8,7 +8,8 @@
     <link rel="shortcut icon" href="img/mylogo3.png" type="image/x-icon">
     
 </head>
-<body>
+
+<body onLoad="heroSlides()">
     
     <section id="header">
         <a href="#"><img src="./img/sitelogo.png" class="logo"></a>
@@ -25,14 +26,43 @@
         </div>
     </section>
 
-
-    <section id="hero">
+    <!-- <section id="hero">
         <h4>Flagship Tech Store</h4>
         <h2>Novatech</h2>
         <h1>Genuine Tech</h1>
-        <!-- <p>Wide range of tech products for your needs</p> -->
         <button>Shop Now &nbsp&nbsp<i class="fa-solid fa-bag-shopping"></i></button>
-    </section>
+    </section> -->
+
+    <div class="slideshow-container">
+		
+		<div class="mySlides fade">
+			<section id="hero1">
+                <h4>Flagship Tech Store</h4>
+                <h2>Novatech</h2>
+                <h1>Genuine Tech</h1>
+                <button>Shop Now &nbsp&nbsp<i class="fa-solid fa-bag-shopping"></i></button>
+            </section>
+		</div>
+		
+		<div class="mySlides fade">
+			<section id="hero2">
+                <h4>Flagship Tech Store</h4>
+                <h2>Novatech</h2>
+                <h1>Genuine Tech</h1>
+                <button>Shop Now &nbsp&nbsp<i class="fa-solid fa-bag-shopping"></i></button>
+            </section>
+		</div>
+		
+		<div class="mySlides fade">
+			<section id="hero3">
+                <h4>Flagship Tech Store</h4>
+                <h2>Novatech</h2>
+                <h1>Genuine Tech</h1>
+                <button>Shop Now &nbsp&nbsp<i class="fa-solid fa-bag-shopping"></i></button>
+            </section>
+		</div>
+        
+	</div>
 
     
     <section id="feature" class="section-p1">
@@ -224,14 +254,14 @@
             </div>
         </div>
         <br>
-        <a href="shop.html" target="_blank">
+        <a href="shop.html">
             <button class="shop-btn">Shop More &nbsp&nbsp<i class="fa-solid fa-bag-shopping"></i></button>
         </a>
+        <br>
+        <br>
+        <br>
+        <br>
 
-        <br>
-        <br>
-        <br>
-        <br>
         <h2 class="heading1">Store Promotions</h2>
         <p class="sub1">Discover the latest products from a wide range of brands</p>
 
@@ -285,11 +315,11 @@
     <footer class="section-p1-home">
 
         <div class="col">
-            <img class="logo" src="img/sitelogo.png">
+            <img class="logo-footer" src="img/sitelogo.png">
             <h4>Contact</h4>
-            <p><strong>Address: </strong>St Michaels Rd, Colombo</p>
-            <p><strong>Phone: </strong>+94 74 104 0292</p>
-            <p><strong>Email: </strong>ashfaaq.rifath2@gmail.com</p>
+            <p><strong>Address : &nbsp </strong>Sri Saranankara Rd, Colombo</p>
+            <p><strong>Phone : &nbsp </strong>+94 74 104 0292</p>
+            <p><strong>Email : &nbsp </strong>ashfaaq.rifath2@gmail.com</p>
             
             <div class="follow">
                 <h4>Follow us</h4>
@@ -321,6 +351,7 @@
 
         <div class="col install">
             <h4>Payment Methods</h4>
+            <p>Cash on delivery</p>
             <p>Secure payment gateway</p>
             <img src="img/pay/pay.png">
         </div>
@@ -337,6 +368,43 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+		let slideIndex = 0;
+
+		function heroSlides(){
+			
+			let i;
+			let slides = document.getElementsByClassName("mySlides");
+
+			for (i = 0; i < slides.length; i++){
+				slides[i].style.display = "none";
+			}
+
+			slideIndex++;
+
+			if (slideIndex > slides.length){
+				slideIndex = 1
+			}
+
+			slides[slideIndex-1].style.display = "block";
+			setTimeout(heroSlides, 3000); //Change image every 3 seconds
+		}
+	</script>
 
 
     <script src="script.js"></script>
