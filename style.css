@@ -104,6 +104,10 @@ body{
     right: 50px;
 }
 
+#header .logo{
+    width: 195px;
+}
+
 #header::before{
     content: "";
     position: absolute;
@@ -144,19 +148,20 @@ body{
 #navbar li a:hover::after{
     content: "";
     width: 30%;
-    height: 2px;
+    height: 3px;
+    border-radius: 50px;
     background: #ff0000;
     position: absolute;
     bottom: -4px;
     left: 20px;
 }
 
-
 /* -------------------------------------------------------- */
 /* HOME PAGE */
+/* HERO SLIDE 1 */
 
-#hero{
-    background-image: url("img/hero4.png");
+#hero1{
+    background-image: url("img/hero1.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -168,20 +173,20 @@ body{
     justify-content: center;
 }
 
-#hero h2{
+#hero1 h2{
     font-size: 115px;
     font-weight: 610;
-    letter-spacing: 4px;
+    letter-spacing: 2.5px;
     color: #ff0000;
     padding-bottom: 50px;
 }
 
-#hero h4{
+#hero1 h4{
     padding-bottom: 50px;
     padding-left: 8px;
 }
 
-#hero h1{
+#hero1 h1{
     font-size: 75px;
     letter-spacing: 2px;
     color: #000000;
@@ -189,7 +194,7 @@ body{
     /* padding-bottom: 110px; */
 }
 
-#hero p{
+#hero1 p{
     font-size: 20px;
     font-weight: 600;
     color: #0000009b;
@@ -198,7 +203,7 @@ body{
     left: 85px;
 }
 
-#hero button{
+#hero1 button{
     width: 185px;
     height: 60px;
     background-color: #ff0000;
@@ -209,9 +214,142 @@ body{
     color: #ffffff;
 }
 
-#hero button:hover{
+#hero1 button:hover{
     box-shadow: 0 0 8px rgb(108, 108, 108);
     transition: 0.3s ease;
+}
+
+/* HERO SLIDE 2 */
+
+#hero2{
+    background-image: url("img/hero2.webp");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 0 right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero2 h2{
+    font-size: 115px;
+    font-weight: 610;
+    letter-spacing: 2.5px;
+    color: #ff0000;
+    padding-bottom: 50px;
+}
+
+#hero2 h4{
+    padding-bottom: 50px;
+    padding-left: 8px;
+}
+
+#hero2 h1{
+    font-size: 75px;
+    letter-spacing: 2px;
+    color: #000000;
+    padding-bottom: 60px;
+    /* padding-bottom: 110px; */
+}
+
+#hero2 p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #0000009b;
+    position: absolute;
+    bottom: 150px;
+    left: 85px;
+}
+
+#hero2 button{
+    width: 185px;
+    height: 60px;
+    background-color: #ff0000;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#hero2 button:hover{
+    box-shadow: 0 0 8px rgb(108, 108, 108);
+    transition: 0.3s ease;
+}
+
+/* HERO SLIDE 3 */
+
+#hero3{
+    background-image: url("img/hero3.webp");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 0 right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero3 h2{
+    font-size: 115px;
+    font-weight: 610;
+    letter-spacing: 2.5px;
+    color: #ff0000;
+    padding-bottom: 50px;
+}
+
+#hero3 h4{
+    padding-bottom: 50px;
+    padding-left: 8px;
+}
+
+#hero3 h1{
+    font-size: 75px;
+    letter-spacing: 2px;
+    color: #000000;
+    padding-bottom: 60px;
+    /* padding-bottom: 110px; */
+}
+
+#hero3 p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #0000009b;
+    position: absolute;
+    bottom: 150px;
+    left: 85px;
+}
+
+#hero3 button{
+    width: 185px;
+    height: 60px;
+    background-color: #ff0000;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#hero3 button:hover{
+    box-shadow: 0 0 8px rgb(108, 108, 108);
+    transition: 0.3s ease;
+}
+
+/* Fading animation */
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 /* ----------------------------------------------------------- */
@@ -340,7 +478,6 @@ body{
     background-color: rgb(220, 220, 220);
     font-weight: 600;
     color: #000000;
-    /* border: 1px solid #969696; */
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -370,7 +507,6 @@ body{
     color: #ffffff;
     transition: 0.4s ease;
 }
-
 
 /* --------------------------------------------------------- */
 /* BANNER */
@@ -499,7 +635,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* background-color: #ff5454; */
 }
 
 footer .col{
@@ -509,8 +644,9 @@ footer .col{
     margin-bottom: 20px;
 }
 
-footer .logo{
+footer .logo-footer{
     margin-bottom: 30px;
+    width: 250px;
 }
 
 footer h4{
@@ -536,8 +672,9 @@ footer.follow{
 }
 
 footer .follow i{
+    font-size: 20px;
     color: #464646;
-    padding-right: 4px;
+    padding-right: 20px;
     cursor: pointer;
 }
 
@@ -627,7 +764,6 @@ footer .copyright{
     border: 2px solid #000000;
     border-top-left-radius: 26px;
     border-bottom-left-radius: 26px;
-    /* border-bottom: 2px solid #222; */
     padding: 1em 2em;
 }
 
@@ -639,15 +775,19 @@ footer .copyright{
 
 #search-container button{
     width: 9%;
-    height: 9%;
+    height: 8.6%;
     padding: 1em 2em;
     font-size: 15px;
-    background-color: #ff0000;
+    background-color: #d60000;
     color: #ffffff;
-    /* border: 2px solid #000000; */
     border-top-right-radius: 26px;
     border-bottom-right-radius: 26px;
     margin-top: 0.5em;
+}
+
+#search-container button:hover{
+    background-color: #ff0000;
+    transition: 0.4s ease;
 }
 
 .button-value{
@@ -659,10 +799,17 @@ footer .copyright{
     cursor: pointer;
 }
 
+.button-value:hover{
+    background-color: #ff0000;
+    color: #ffffff;
+    transition: 0.4s ease;
+}
+
 .active-btn{
     background-color: #ff0000;
     color: #ffffff;
 }
+
 
 /* ---------------------------------------------------- */
 /* PRODUCT DETAILS */
@@ -761,7 +908,7 @@ footer .copyright{
     border-radius: 25px;
     position: absolute;
     top: 350px;
-    left: 70px;
+    left: 80px;
     
 }
 
@@ -770,32 +917,25 @@ footer .copyright{
     transition: 0.5s ease;
 }
 
-/* button.heart{
-    font-size: 14px;
-    font-weight: 600;
-    padding: 15px 30px;
-    color: #000000;
-    background-color: #ffffff;
-    border-radius: 4px;
+button.wishlist-btn{
+    height: 52px;
+    font-size: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
     cursor: pointer;
     border: none;
     outline: none;
     transition: 0.2s;
-} */
-
-.products-preview .preview .heart i{
-    background: #d60000;
-    color: #ffffff;
-    border-radius: 25px;
-    position: absolute;
-    bottom: 200px;
-    left: 200px;
 }
 
-/* .products-preview .preview .heart:hover{
-    background: #ff0000;
-    transition: 0.5s ease;
-} */
+.products-preview .preview .wishlist-btn{
+    background: #d60000;
+    color: #ffffff;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 200px;
+    left: 240px;
+}
 
 .products-preview .preview.active{
     display: flex;
@@ -857,3 +997,28 @@ footer .copyright{
     color:#444;
     font-size: 20px;
 }
+
+
+/* ---------------------------------------------------- */
+/* ABOUT US */
+
+#page-header .about-header{
+    background-image: url("img/about/banner.png");
+}
+
+#about-head{
+    display: flex;
+    align-items: center;
+}
+
+#about-head img{
+    width: 50%;
+    height: auto;
+    border-radius: 25px;
+}
+
+#about-head div{
+    padding-left: 40px;
+}
+
+
