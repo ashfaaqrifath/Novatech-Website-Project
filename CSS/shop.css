@@ -1,0 +1,299 @@
+/* ----------------------------------------------------------- */
+/* SHOP PAGE */
+
+#page-header{
+    background-image: url("/img/banner/b1.png");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2{
+    color: #ffffff;
+    font-size: 60px;
+}
+
+#page-header p{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/* ----------------------------------------------------------- */
+/* PAGINATION */
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #ff0000;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#pagination a:hover{
+    background-color: #d60000;
+    transition: 0.3s ease;
+}
+
+/* ---------------------------------------------------- */
+/* SEARCH ENGINE */
+
+.search-engine{
+    width: 95%;
+    /* margin: 0 auto; */
+    padding-top: 50px;
+}
+
+#search-container{  
+    margin: 1em 0 ;
+}
+
+#search-container input{
+    background-color: transparent;
+    font-size: 15px;
+    width: 40%;
+    border: 2px solid #909090;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 1em 2em;
+}
+
+#search-container input:focus{
+    border: 2px solid #ff0000;
+}
+
+#search-container button{
+    width: 9%;
+    height: 8.6%;
+    padding: 1em 2em;
+    font-size: 15px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: 0.5em;
+}
+
+#search-container button:hover{
+    background-color: #d60000;
+    transition: 0.4s ease;
+}
+
+.button-value{
+    border: 2px solid #ff0000;
+    padding: 0.5em 1em;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.button-value:hover{
+    background-color: #ff0000;
+    color: #ffffff;
+    transition: 0.4s ease;
+}
+
+.active-btn{
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+
+/* ---------------------------------------------------- */
+/* PRODUCT DETAILS */
+
+.products-preview{
+    position: fixed;
+    top:0; left:0;
+    /* min-height: 100vh; */
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(65px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-preview .preview{
+    display: none;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.199);
+    border: 1px solid rgba(255, 255, 255, 0.417);
+    border-radius: 25px;
+    position: relative;
+    margin: 6rem;
+    width: 60%;
+    height: 500px;
+}
+
+.products-preview .preview .single-pro-details{
+    width: 60%;
+    padding-top: 30px;
+    text-align: left;
+}
+
+.products-preview .preview .single-pro-details h2{
+    font-size: 28px;
+    position: absolute;
+    top: 40px;
+}
+
+.products-preview .preview .single-pro-details h4{
+    font-size: 26px;
+    padding: 40px 0 20px 0;
+}
+
+.products-preview .preview .single-pro-details #details{
+    font-size: 26px;
+    padding: 10px 0 1px 0;
+}
+
+.products-preview .preview .single-pro-details h6{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px 0 5px 0;
+}
+
+.products-preview .preview .single-pro-details select{
+    background: rgba(52, 0, 0, 0.271);
+    border: 1px solid rgba(255, 255, 255, 0.409);
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    height: 35px;
+}
+
+.products-preview .preview .single-pro-details select:focus{
+    border: 1px solid #ff0000;
+    transition: 0.3s ease;
+}
+
+.products-preview .preview .single-pro-details input{
+    background: rgba(52, 0, 0, 0.271);
+    border: 1px solid rgba(255, 255, 255, 0.409);
+    width: 50px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.products-preview .preview .single-pro-details input:focus{
+    border: 1px solid #ff0000;
+}
+
+.products-preview .preview .single-pro-details input:focus{
+    outline: none;
+}
+
+.products-preview .preview button{
+    background: #ff0000;
+    color: #ffffff;
+    border-radius: 50px;
+    position: absolute;
+    top: 350px;
+    left: 80px;
+    
+}
+
+.products-preview .preview button:hover{
+    background: #d60000;
+    transition: 0.4s ease;
+}
+
+button.wishlist-btn{
+    height: 52px;
+    font-size: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+.products-preview .preview .wishlist-btn{
+    background: #ff0000;
+    color: #ffffff;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 200px;
+    left: 240px;
+}
+
+.products-preview .preview.active{
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-preview .preview img{
+    width: 300px;
+    height: 300px;
+}
+
+.products-preview .preview .single-pro-details a{
+    text-decoration: none;
+    color: #ffffff;
+    background: #ff0000;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    top: 267px;
+    left: 565px;
+    padding: 5px 12px;
+}
+
+.products-preview .preview .single-pro-details a:hover{
+    background: #d60000;
+    transition: 0.5s ease;
+}
+
+.products-preview .preview .single-pro-details i{
+    color: #ff0000;
+    font-size: 20px;
+    position: absolute;
+    top: 112px;
+    left: 520px;
+}
+
+.products-preview .preview .single-pro-details #warranty{
+    color: #ff0000;
+    font-size: 15px;
+    font-weight: 650;
+    position: absolute;
+    top: 91px;
+    left: 545px;
+}
+
+.products-preview .preview .single-pro-details span{
+    color: #ff0000;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.products-preview .preview .fa-times{
+    position: absolute;
+    top:1rem; right:1.5rem;
+    cursor: pointer;
+    color:#444;
+    font-size: 20px;
+}

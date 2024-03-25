@@ -1,0 +1,658 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Novatech | Genuine Tech</title>
+    
+    <script src="https://kit.fontawesome.com/c37001a085.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/shop.css">
+    <link rel="shortcut icon" href="img/mylogo3.png">
+    
+</head>
+
+<body onLoad="heroSlides()">
+
+
+    <script>
+		let slideIndex = 0;
+
+		function heroSlides(){
+			
+			let i;
+			let slides = document.getElementsByClassName("mySlides");
+
+			for (i = 0; i < slides.length; i++){
+				slides[i].style.display = "none";
+			}
+
+			slideIndex++;
+
+			if (slideIndex > slides.length){
+				slideIndex = 1
+			}
+
+			slides[slideIndex-1].style.display = "block";
+			setTimeout(heroSlides, 3000); //Change image every 3 seconds
+		}
+	</script>
+    <script src="/JavaScript/popup.js" defer></script>
+
+    
+    <section id="header">
+        <a href="#"><img src="./img/sitelogo.png" class="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <div class="slideshow-container">
+		
+		<div class="mySlides fade">
+			<section id="hero1">
+                <h4>Discover Best Technology</h4>
+                <h2>Novatech</h2>
+                <h1>Genuine Tech</h1>
+                <a href="#product1">
+                    <button>Shop Now &nbsp&nbsp<i class="fa-solid fa-bag-shopping"></i></button>
+                </a>
+            </section>
+		</div>
+		
+		<div class="mySlides fade">
+			<section id="hero2">
+                <h4>Discover Best Technology</h4>
+                <h2>Novatech</h2>
+                <h1>Genuine Tech</h1>
+                <a href="#product1">
+                    <button>Shop Now &nbsp&nbsp<i class="fa-solid fa-bag-shopping"></i></button>
+                </a>
+            </section>
+		</div>
+		
+		<div class="mySlides fade">
+			<section id="hero3">
+                <h4>Discover Best Technology</h4>
+                <h2>Novatech</h2>
+                <h1>Genuine Tech</h1>
+                <a href="#product1">
+                    <button>Shop Now &nbsp&nbsp<i class="fa-solid fa-bag-shopping"></i></button>
+                </a>
+            </section>
+		</div>
+        
+	</div>
+
+    
+    <section id="feature" class="section-p1">
+
+        <div class="fe-box">
+            <img src="img/features/google-sri-lanka-simplytek_1384x1080_crop_center (1).webp">
+            <h6>Google</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="img/features/apple-sri-lanka-simplytek_512x384_crop_center.webp">
+            <h6>Apple</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="img/features/showerme.webp">
+            <h6>Xiaomi</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="img/features/brand-samsung.webp">
+            <h6>Samsung</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="img/features/onepluslgog.webp">
+            <h6>Oneplus</h6>
+        </div>
+
+    </section>
+    
+
+
+
+
+
+
+    <section id="product1" class="section-p1">
+        <h2 class="heading1">Featured Products</h2>
+        <p class="sub1">Discover the latest products from a wide range of brands</p>
+        <div class="pro-container">
+
+            <div class="pro" data-name="p-1">
+                <img src="img/products/Apple-iPhone-15-Pro-SimplyTek-K-4_610x_crop_center-Photoroom.png-Photoroom.png">
+                <div class="des">
+                    <span>Apple</span>
+                    <h5>Apple iPhone 15 Pro</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.6</span>
+                    </div>
+                    <h4>Rs. 550,000</h4>
+                </div>
+                <h6 class="cart">Add Cart</h6>
+            </div>
+
+            <div class="pro" data-name="p-2">
+                <img src="img/products/iPhone-14-Pro-SimplyTek-LK-1_610x_crop_center.webp">
+                <div class="des">
+                    <span>Apple</span>
+                    <h5>Apple iPhone 14 Pro</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.6</span>
+                    </div>
+                    <h4>Rs. 400,000</h4>
+                </div>
+                <h6 class="cart">Add Cart</h6>
+            </div>
+
+            <div class="pro" data-name="p-3">
+                <img src="img/products/SamsungGalaxyS24-Simplytek-Sri-Lanka_1_1220x_crop_center-Photoroom.png-Photoroom.png">
+                <div class="des">
+                    <span>Samsung</span>
+                    <h5>Samsung Galaxy S24</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.6</span>
+                    </div>
+                    <h4>Rs. 400,000</h4>
+                </div>
+                <h6 class="cart">Add Cart</h6>
+            </div>
+
+            <div class="pro" data-name="p-4">
+                <img src="img/products/Galaxy-S23-Ultra-Green-Photoroom.png-Photoroom.png">
+                <div class="des">
+                    <span>Samsung</span>
+                    <h5>Samsung Galaxy S23 Ultra</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.6</span>
+                    </div>
+                    <h4>Rs. 350,000</h4>
+                </div>
+                <h6 class="cart">Add Cart</h6>
+            </div>
+
+            <div class="pro" data-name="p-5">
+                <img src="img/products/Google-Pixel-8-Pro-Simplytek-lk_2_610x_crop_center-Photoroom.png-Photoroom.png">
+                <div class="des">
+                    <span>Google</span>
+                    <h5>Google Pixel 8 Pro</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.6</span>
+                    </div>
+                    <h4>Rs. 350,000</h4>
+                </div>
+                <h6 class="cart">Add Cart</h6>
+            </div>
+
+            <div class="pro" data-name="p-6">
+                <img src="img/products/Pixel-6-pro-simplytek-lk-2_610x_crop_center-Photoroom.png-Photoroom.png">
+                <div class="des">
+                    <span>Google</span>
+                    <h5>Google Pixel 7 Pro</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.6</span>
+                    </div>
+                    <h4>Rs. 300,000</h4>
+                </div>
+                <h6 class="cart">Add Cart</h6>
+            </div>
+
+
+            <div class="pro" data-name="p-8">
+                <img src="img/products/OnePlus-11-5G-16GB-RAM-256GB-Simplytek-LK_610x_crop_center-Photoroom.png-Photoroom.png">
+                <div class="des">
+                    <span>OnePlus</span>
+                    <h5>OnePlus 11 5G</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.6</span>
+                    </div>
+                    <h4>Rs. 280,000</h4>
+                </div>
+                <h6 class="cart">Add Cart</h6>
+            </div>
+
+            <div class="pro" data-name="p-9">
+                <img src="img/products/OnePlusNordCE3Lite5GSmartphone_simplytek_1220x_crop_center-Photoroom.png-Photoroom.png">
+                <div class="des">
+                    <span>OnePlus</span>
+                    <h5>OnePlus Nord CE3 Lite 5G</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.6</span>
+                    </div>
+                    <h4>Rs. 110,000</h4>
+                </div>
+                <h6 class="cart">Add Cart</h6>
+            </div>
+
+
+        </div>
+        <br>
+        <a href="shop.html">
+            <button class="shop-btn">Shop More &nbsp&nbsp<i class="fa-solid fa-bag-shopping"></i></button>
+        </a>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h2 class="heading1">Store Promotions</h2>
+        <p class="sub1">Discover the latest products from a wide range of brands</p>
+
+
+
+
+        <div class="products-preview">
+
+            <div class="preview" data-target="p-1">
+                <i class="fas fa-times"></i>
+                <img src="img/products/Apple-iPhone-15-Pro-SimplyTek-K-4_610x_crop_center-Photoroom.png-Photoroom.png" alt="">
+                <button class="normal" onclick="this.innerHTML = 'Item added'">Add to cart</button>
+                <button class="wishlist-btn" onclick="this.innerHTML = '<i class=\'fa-regular fa-circle-check\'></i>'"><i class="fa-solid fa-heart"></i></button>
+
+                <div class="single-pro-details">
+                    <h2>Apple iPhone 15 Pro</h2>
+                    <h4>Rs. 550,000</h4>
+                    <i class="fa-solid fa-award"></i>
+                    <h6 id="warranty">1 Year Warranty</h6>
+
+                    <input type="number" value="1">
+                    <select>
+                        <option>Select varient</option>
+                        <option>6GB RAM 128GB ROM</option>
+                        <option>8GB RAM 256GB ROM</option>
+                    </select>
+
+                    <h6>Stock: <span>45 items left</span></h6>
+
+                    <h4 id="details">Product details</h4>
+                    <a href="https://www.apple.com/iphone-15-pro/" target="_blank">Specifications</a>
+                    
+                    <p>• Smooth 6.74″ 90Hz display<br>
+                        • 50MP AI triple camera<br>
+                        • Massive 5000mAh (typ) battery<br>
+                        • Supports 18W fast charging<br>
+                        • Powerful octa-core processor</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="preview" data-target="p-2">
+                <i class="fas fa-times"></i>
+                <img src="img/products/iPhone-14-Pro-SimplyTek-LK-1_610x_crop_center.webp" alt="">
+                <button class="normal" onclick="this.innerHTML = 'Item added'">Add to cart</button>
+                <button class="wishlist-btn" onclick="this.innerHTML = '<i class=\'fa-regular fa-circle-check\'></i>'"><i class="fa-solid fa-heart"></i></button>
+
+                <div class="single-pro-details">
+                    <h2>Apple iPhone 14 Pro</h2>
+                    <h4>Rs. 400,000</h4>
+                    <i class="fa-solid fa-award"></i>
+                    <h6 id="warranty">1 Year Warranty</h6>
+
+                    <input type="number" value="1">
+                    <select>
+                        <option>Select varient</option>
+                        <option>6GB RAM 128GB ROM</option>
+                        <option>8GB RAM 256GB ROM</option>
+                    </select>
+
+                    <h6>Stock: <span>45 items left</span></h6>
+
+                    <h4 id="details">Product details</h4>
+                    <a href="https://www.apple.com/ge/iphone-14-pro/" target="_blank">Specifications</a>
+                    <p>• Long-Lasting Playtime<br>
+                        • Seamless and Stable Connection<br>
+                        • Foldable Design<br>
+                        • Button Controls<br>
+                        • Lightweight and Comfortable</p>
+                </div>
+            </div>
+
+
+            <div class="preview" data-target="p-3">
+                <i class="fas fa-times"></i>
+                <img src="img/products/SamsungGalaxyS24-Simplytek-Sri-Lanka_1_1220x_crop_center-Photoroom.png-Photoroom.png" alt="">
+                <button class="normal" onclick="this.innerHTML = 'Item added'">Add to cart</button>
+                <button class="wishlist-btn" onclick="this.innerHTML = '<i class=\'fa-regular fa-circle-check\'></i>'"><i class="fa-solid fa-heart"></i></button>
+
+                <div class="single-pro-details">
+                    <h2>Samsung Galaxy S24</h2>
+                    <h4>Rs. 400,000</h4>
+                    <i class="fa-solid fa-award"></i>
+                    <h6 id="warranty">1 Year Warranty</h6>
+
+                    <input type="number" value="1">
+                    <select>
+                        <option>Select varient</option>
+                        <option>6GB RAM 128GB ROM</option>
+                        <option>8GB RAM 256GB ROM</option>
+                    </select>
+
+                    <h6>Stock: <span>45 items left</span></h6>
+
+                    <h4 id="details">Product details</h4>
+                    <a href="https://www.samsung.com/us/smartphones/galaxy-s24/" target="_blank">Specifications</a>
+                    <p>• Smooth 6.74″ 90Hz display<br>
+                        • 50MP AI triple camera<br>
+                        • Massive 5000mAh (typ) battery<br>
+                        • Supports 18W fast charging<br>
+                        • Powerful octa-core processor</p>
+                </div>
+            </div>
+        
+            <div class="preview" data-target="p-4">
+                <i class="fas fa-times"></i>
+                <img src="img/products/Galaxy-S23-Ultra-Green-Photoroom.png-Photoroom.png" alt="">
+                <button class="normal" onclick="this.innerHTML = 'Item added'">Add to cart</button>
+                <button class="wishlist-btn" onclick="this.innerHTML = '<i class=\'fa-regular fa-circle-check\'></i>'"><i class="fa-solid fa-heart"></i></button>
+
+                <div class="single-pro-details">
+                    <h2>Samsung Galaxy S23 Ultra</h2>
+                    <h4>Rs. 350,000</h4>
+                    <i class="fa-solid fa-award"></i>
+                    <h6 id="warranty">1 Year Warranty</h6>
+
+                    <input type="number" value="1">
+                    <select>
+                        <option>Select varient</option>
+                        <option>6GB RAM 128GB ROM</option>
+                        <option>8GB RAM 256GB ROM</option>
+                    </select>   
+
+                    <h6>Stock: <span>45 items left</span></h6>
+
+                    <h4 id="details">Product details</h4>
+                    <a href="https://www.samsung.com/us/smartphones/galaxy-s23-ultra/" target="_blank">Specifications</a>
+                    <p>• Smooth 6.74″ 90Hz display<br>
+                        • 50MP AI triple camera<br>
+                        • Massive 5000mAh (typ) battery<br>
+                        • Supports 18W fast charging<br>
+                        • Powerful octa-core processor</p>
+                </div>
+            </div>
+        
+            <div class="preview" data-target="p-5">
+                <i class="fas fa-times"></i>
+                <img src="img/products/Google-Pixel-8-Pro-Simplytek-lk_2_610x_crop_center-Photoroom.png-Photoroom.png" alt="">
+                <button class="normal" onclick="this.innerHTML = 'Item added'">Add to cart</button>
+                <button class="wishlist-btn" onclick="this.innerHTML = '<i class=\'fa-regular fa-circle-check\'></i>'"><i class="fa-solid fa-heart"></i></button>
+
+                <div class="single-pro-details">
+                    <h2>Google Pixel 8 Pro</h2>
+                    <h4>Rs. 350,000</h4>
+                    <i class="fa-solid fa-award"></i>
+                    <h6 id="warranty">1 Year Warranty</h6>
+
+                    <input type="number" value="1">
+                    <select>
+                        <option>Select varient</option>
+                        <option>6GB RAM 128GB ROM</option>
+                        <option>8GB RAM 256GB ROM</option>
+                    </select>
+
+                    <h6>Stock: <span>45 items left</span></h6>
+
+                    <h4 id="details">Product details</h4>
+                    <a href="https://www.gsmarena.com/google_pixel_8_pro-12545.php" target="_blank">Specifications</a>
+                    <p>• Smooth 6.74″ 90Hz display<br>
+                        • 50MP AI triple camera<br>
+                        • Massive 5000mAh (typ) battery<br>
+                        • Supports 18W fast charging<br>
+                        • Powerful octa-core processor</p>
+                </div>
+            </div>
+        
+            <div class="preview" data-target="p-6">
+                <i class="fas fa-times"></i>
+                <img src="img/products/Pixel-6-pro-simplytek-lk-2_610x_crop_center-Photoroom.png-Photoroom.png" alt="">
+                <button class="normal" onclick="this.innerHTML = 'Item added'">Add to cart</button>
+                <button class="wishlist-btn" onclick="this.innerHTML = '<i class=\'fa-regular fa-circle-check\'></i>'"><i class="fa-solid fa-heart"></i></button>
+
+                <div class="single-pro-details">
+                    <h2>Google Pixel 7 Pro</h2>
+                    <h4>Rs. 300,000</h4>
+                    <i class="fa-solid fa-award"></i>
+                    <h6 id="warranty">1 Year Warranty</h6>
+
+                    <input type="number" value="1">
+                    <select>
+                        <option>Select varient</option>
+                        <option>6GB RAM 128GB ROM</option>
+                        <option>8GB RAM 256GB ROM</option>
+                    </select>
+
+                    <h6>Stock: <span>45 items left</span></h6>
+
+                    <h4 id="details">Product details</h4>
+                    <a href="https://www.gsmarena.com/google_pixel_7_pro-11908.php" target="_blank">Specifications</a>
+                    <p>• Smooth 6.74″ 90Hz display<br>
+                        • 50MP AI triple camera<br>
+                        • Massive 5000mAh (typ) battery<br>
+                        • Supports 18W fast charging<br>
+                        • Powerful octa-core processor</p>
+                </div>
+            </div>
+
+
+            <div class="preview" data-target="p-8">
+                <i class="fas fa-times"></i>
+                <img src="img/products/OnePlus-11-5G-16GB-RAM-256GB-Simplytek-LK_610x_crop_center-Photoroom.png-Photoroom.png" alt="">
+                <button class="normal" onclick="this.innerHTML = 'Item added'">Add to cart</button>
+                <button class="wishlist-btn" onclick="this.innerHTML = '<i class=\'fa-regular fa-circle-check\'></i>'"><i class="fa-solid fa-heart"></i></button>
+
+                <div class="single-pro-details">
+                    <h2>OnePlus 11 5G</h2>
+                    <h4>Rs. 280,000</h4>
+                    <i class="fa-solid fa-award"></i>
+                    <h6 id="warranty">1 Year Warranty</h6>
+
+                    <input type="number" value="1">
+                    <select>
+                        <option>Select varient</option>
+                        <option>6GB RAM 128GB ROM</option>
+                        <option>8GB RAM 256GB ROM</option>
+                    </select>
+
+                    <h6>Stock: <span>45 items left</span></h6>
+
+                    <h4 id="details">Product details</h4>
+                    <a href="https://www.oneplus.com/global/11" target="_blank">Specifications</a>
+                    <p>• Smooth 6.74″ 90Hz display<br>
+                        • 50MP AI triple camera<br>
+                        • Massive 5000mAh (typ) battery<br>
+                        • Supports 18W fast charging<br>
+                        • Powerful octa-core processor</p>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-9">
+                <i class="fas fa-times"></i>
+                <img src="img/products/OnePlusNordCE3Lite5GSmartphone_simplytek_1220x_crop_center-Photoroom.png-Photoroom.png" alt="">
+                <button class="normal" onclick="this.innerHTML = 'Item added'">Add to cart</button>
+                <button class="wishlist-btn" onclick="this.innerHTML = '<i class=\'fa-regular fa-circle-check\'></i>'"><i class="fa-solid fa-heart"></i></button>
+
+                <div class="single-pro-details">
+                    <h2>OnePlus Nord CE3 Lite 5G</h2>
+                    <h4>Rs. 110,000</h4>
+                    <i class="fa-solid fa-award"></i>
+                    <h6 id="warranty">1 Year Warranty</h6>
+
+                    <input type="number" value="1">
+                    <select>
+                        <option>Select varient</option>
+                        <option>6GB RAM 128GB ROM</option>
+                        <option>8GB RAM 256GB ROM</option>
+                    </select>
+
+                    <h6>Stock: <span>45 items left</span></h6>
+
+                    <h4 id="details">Product details</h4>
+                    <a href="https://www.oneplus.com/global/nord-ce-3-lite-5g" target="_blank">Specifications</a>
+                    <p>• Smooth 6.74″ 90Hz display<br>
+                        • 50MP AI triple camera<br>
+                        • Massive 5000mAh (typ) battery<br>
+                        • Supports 18W fast charging<br>
+                        • Powerful octa-core processor</p>
+                </div>
+            </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+<!-- ######################################################################################################################################## -->
+
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>iPhone deals</h4>
+            <h2>Price drop 30%</h2>
+            <span>Enjoy seasonal offers for Apple products</span>
+
+            <a href="shop.html" target="_blank">
+                <button class="white">Learn More</button>
+            </a>
+        </div>
+
+        <div class="banner-box banner-box2">
+            <h4>Samsung deals</h4>
+            <h2>Price drop 30%</h2>
+            <span>Enjoy seasonal offers for Samsung products</span>
+
+            <a href="shop.html" target="_blank">
+                <button class="white">Learn More</button>
+            </a>
+        </div>
+    </section>
+
+
+    <section id="banner3">
+        <div class="banner-box1">
+            <h2>REDMI SALE</h2>
+            <h3>Black Friday 50% off</h3>
+            <h4>Check out our shop</h4>
+        </div>
+
+        <div class="banner-box2">
+            <h2>ONEPLUS SALE</h2>
+            <h3>Black Friday 50% off</h3>
+            <h4>Check out our shop</h4>
+        </div>
+
+        <div class="banner-box3">
+            <h2>PIXEL SALE</h2>
+            <h3>Black Friday 50% off</h3>
+            <h4>Check out our shop</h4>
+        </div>
+    </section>
+
+
+    <footer class="section-p1-home">
+
+        <div class="col">
+            <img class="logo-footer" src="img/sitelogo.png">
+            <h4>Contact</h4>
+            <p><strong>Address : &nbsp </strong>BOC merchant tower, 28 St Michaels Rd, Colombo</p>
+            <p><strong>Phone : &nbsp </strong>+94 74 104 0292</p>
+            <p><strong>Email : &nbsp </strong>ashfaaq.rifath2@gmail.com</p>
+            
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <a href="https://github.com/ashfaaqrifath/Ecommerce-Website-Project" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Quick Links</h4>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact us</a>
+            <a href="about.html">Privacy Policy</a>
+            <a href="about.html">Terms & Conditions</a>
+        </div>
+
+        <div class="col">
+            <a href="profile.html">Sign in</a>
+            <a href="cart.html">View cart</a>
+            <a href="profile.html">My wishlist</a>
+            <a href="profile.html">Track my order</a>
+        </div>
+
+        <div class="col install">
+            <h4>Payment Methods</h4>
+            <p>Cash on delivery</p>
+            <p>Secure payment gateway</p>
+            <img src="img/pay/pay.png">
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2024 Novatech - Developed by <a href="admin.html">Ashfaaq Rifath</a></p>
+        </div>
+
+    </footer>
+
+
+
+</body>
+</html>
