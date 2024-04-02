@@ -1,0 +1,106 @@
+/* LOGIN FORM */
+
+body {
+    position: fixed;
+    min-height: 100vh;
+    background-image: url("/img/login1.png");
+    backdrop-filter: blur(55px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* register form reused styles */
+
+.wrapper{
+    width: 800px;
+    background: rgba(0, 0, 0, 0.199);
+    border: 2px solid rgba(255, 255, 255, 0.508);
+    color: #ffffff;
+    border-radius: 25px;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .rem-password a,
+.register-link p a{
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+.wrapper .rem-password a:hover,
+.register-link p a:hover{   
+    color: #ff0000;
+    transition: 0.3s ease;
+}
+
+.wrapper button{
+    width: 30%;
+    font-size: 15.5px;
+}
+
+/* .inputBox i{
+    position: absolute;
+    right: 1000px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14.5px;
+} */
+
+.update-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.update-profile form{
+    text-align: center;
+    width: 700px;
+    text-align: center;
+}
+
+.update-profile form .flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.update-profile form .flex .inputBox{
+    width: 49%;
+}
+
+.update-profile form .flex .inputBox .box{
+    width: 100%;
+    border-radius: 25px;
+    background: rgba(52, 0, 0, 0.271);
+    padding:12px 14px;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.inputBox input:focus{
+    border: 1px solid #ff0000;
+    transition: 0.3s ease;
+}
+
+.inputBox input::placeholder{
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+.register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}

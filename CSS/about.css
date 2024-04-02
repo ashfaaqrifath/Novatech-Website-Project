@@ -1,0 +1,80 @@
+/* ABOUT US */
+
+#page-header{
+    background-image: url("/img/banner/b1.png");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2{
+    color: #ffffff;
+    font-size: 60px;
+}
+
+#page-header p{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+/* about page */
+
+#about-head{
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+#about-head img{
+    width: 650px;
+    height: 450px;
+    border-radius: 25px;
+}
+
+#about-head div{
+    padding-left: 40px;
+}
+
+/* About Us title */
+#about-head h2{
+    color: #ff0000;
+    font-size: 60px;
+}
+
+/* paragrahp */
+#about-head p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+#about-head marquee{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    background-color: #ff0000;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+/* privacy policy/terms */
+
+#abt-title{
+    color: #ff0000;
+    font-size: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#abt-para2{
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 18px;
+    text-align: justify;
+}
+

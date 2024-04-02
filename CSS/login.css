@@ -1,0 +1,100 @@
+/* LOGIN FORM */
+
+body {
+    position: fixed;
+    min-height: 100vh;
+    background-image: url("/img/login1.png");
+    backdrop-filter: blur(55px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* login form box */
+
+.wrapper{
+    width: 420px;
+    background: rgba(0, 0, 0, 0.199);
+    border: 2px solid rgba(255, 255, 255, 0.508);
+    color: #ffffff;
+    border-radius: 25px;
+    padding: 30px 40px;
+}
+
+/* each input box */
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: rgba(52, 0, 0, 0.271);
+    border: 1px solid rgba(255, 255, 255, 0.409);
+    border-radius: 25px;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #ffffff;
+}
+
+.input-box input:focus{
+    border: 1px solid #ff0000;
+    transition: 0.3s ease;
+}
+
+/* input feild icon */
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14.5px;
+}
+
+/* forgot password link */
+
+.wrapper .rem-password{
+    padding-bottom: 15px;
+}
+
+.wrapper .rem-password a,
+.register-link p a{
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+.wrapper .rem-password a:hover,
+.register-link p a:hover{   
+    color: #ff0000;
+    transition: 0.3s ease;
+}
+
+.wrapper button{
+    width: 40%;
+    font-size: 15.5px;
+}
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+/* Don't have an account? */
+.register-link p{
+    color: #4b4b4b;
+}
+
