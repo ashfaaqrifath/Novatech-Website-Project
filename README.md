@@ -1,2 +1,2 @@
-# E-Commerce-Website-Project
-E-Commerce Website Project
+# Novatech-Website-Project
+Novatech Ecommerce Website Project
