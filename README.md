@@ -1,3 +1,2 @@
 # Novatech-Website-Project
-Novatech Ecommerce Website Project
-A. A. Rifath (SA23089754)
+Novatech Ecommerce Website Project - SA23089754
