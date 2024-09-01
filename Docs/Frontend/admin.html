@@ -1,0 +1,531 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin - Novatech</title>
+    
+    <script src="https://kit.fontawesome.com/c37001a085.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/admin.css">
+    
+    <link rel="shortcut icon" href="img/mylogo3.png">
+    
+</head>
+
+<body>
+
+    <section id="menu">
+        <div class="logo">
+            <a href="index.html"><img src="./img/sitelogo.png" class="logo"></a>
+        </div>
+
+        <div class="items">
+            <li><i class="fa-solid fa-screwdriver-wrench"></i><a href="#interface">Dashboard</a></li>
+            <li><i class="fa-solid fa-bag-shopping"></i><a href="#cart">Products</a></li>
+            <li><i class="fa-solid fa-pen-to-square"></i><a href="#my-products">My products</a></li>
+            <li><i class="fa-solid fa-truck"></i><a href="#orders">Orders</a></li>
+            <li><i class="fa-solid fa-users"></i><a href="#users">Users</a></li>
+            <li><i class="fa-solid fa-gear"></i><a href="#">Settings</a></li>
+            <li><i class="fa-solid fa-user"></i><a href="login.html">Admin login</a></li>
+        </div>
+        
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+
+                <div class='counter' style='padding-top: 10px;'><a>ashfaaq.rifath2@gmail.com</a></div>
+                
+                <div class="profile">
+                    <h4>2024-08-30</h4>
+                    <i class="fa-solid fa-gear"></i>
+                    <a href="profile.html"><img src="img/avatar.jpg" class="logo"></a>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="i-name">
+            Dashboard
+            <a href="index.html">
+                <button type="button" class="normal">View site</button>
+            </a>
+        </h3>
+
+
+        <div class="values">
+
+            <div class="val-box">
+                <i class="fa-solid fa-shapes"></i>
+                <div>
+                    <span>Inventory</span>
+                    
+                    <h3>234 Items</h3>
+                    
+                </div>
+            </div>
+
+            <div class="val-box">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div>
+                    <span>Products</span>
+                    <h3>134</h3>
+                </div>
+            </div>
+
+            <div class="val-box">
+                <i class="fa-solid fa-truck"></i>
+                <div>
+                    <span>Total orders</span>
+
+                    <h3>105</h3>
+                    
+                </div>
+            </div>
+
+            <div class="val-box">
+                <i class="fa-solid fa-money-bill"></i>
+                <div>
+                    <span>Income</span>
+                    <h3>Rs. 1,230,000</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <br><br>
+        <section id="feature" class="section-p1">
+
+            <div class="fe-box">
+                <img src="img/about/truck-solid (1).svg" style="width: 90px; height: 90px;">
+                <h6>Orders completed: 105</h6>
+            </div>
+    
+            <div class="fe-box">
+                <img src="img/about/headset-solid (2).svg" style="width: 90px; height: 90px;">
+                <h6>Customer feedback: 35</h6>
+            </div>
+    
+            <div class="fe-box">
+                <img src="img/about/award-solid (1).svg" style="width: 90px; height: 90px;">
+                <h6>Warranty up to 1 year</h6>
+            </div>
+    
+            <div class="fe-box">
+                <img src="img/about/screwdriver-wrench-solid (1).svg" style="width: 90px; height: 90px;">
+                <h6>Product inventory: 234</h6>
+            </div>
+    
+            <div class="fe-box">
+                <img src="img/about/clock-solid (1).svg" style="width: 90px; height: 90px;">
+                <h6>Site status: active</h6>
+            </div>
+    
+        </section>
+
+        <br><br><br>
+        <hr>
+        <br><br><br>
+
+        <section id="cart" class="section-p1">
+
+            <form action="" method="post" style="position: absolute; right: 70px;">
+                <button type="submit" class="normal" name="unpublishBtn">Unpublish all</button>&nbsp&nbsp
+                <button type="submit" class="normal" name="publishBtn">Publish all</button>
+            </form>
+
+            <h2>Product settings</h2>
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td style="color: #ff0000;">PRODUCT</td>
+                        <td style="color: #ff0000;">NAME</td>
+                        <td style="color: #ff0000;">PRICE</td>
+                        <td style="color: #ff0000;">STOCK</td>
+                        <td style="padding-left: 60px; color: #ff0000;">PUBLISHED BY</td>
+                        <td></td>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td><img src="img/products/Redmi-13c-simplytek-lk_610x_crop_center(1).png"></td>
+                        <td>Xiaomi Redmi 13C</td>
+                        <td>Rs. 70,000</td>
+                        <td>45 items left</td>
+                        <td style='padding-left: 40px; font-weight: 450;'>ashfaaqrifath2@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="img/products/Redmi-13c-simplytek-lk_610x_crop_center(1).png"></td>
+                        <td>Xiaomi Redmi 13C</td>
+                        <td>Rs. 70,000</td>
+                        <td>45 items left</td>
+                        <td style='padding-left: 40px; font-weight: 450;'>ashfaaqrifath2@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="img/products/Redmi-13c-simplytek-lk_610x_crop_center(1).png"></td>
+                        <td>Xiaomi Redmi 13C</td>
+                        <td>Rs. 70,000</td>
+                        <td>45 items left</td>
+                        <td style='padding-left: 40px; font-weight: 450;'>ashfaaqrifath2@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="img/products/Redmi-13c-simplytek-lk_610x_crop_center(1).png"></td>
+                        <td>Xiaomi Redmi 13C</td>
+                        <td>Rs. 70,000</td>
+                        <td>45 items left</td>
+                        <td style='padding-left: 40px; font-weight: 450;'>ashfaaqrifath2@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="img/products/Redmi-13c-simplytek-lk_610x_crop_center(1).png"></td>
+                        <td>Xiaomi Redmi 13C</td>
+                        <td>Rs. 70,000</td>
+                        <td>45 items left</td>
+                        <td style='padding-left: 40px; font-weight: 450;'>ashfaaqrifath2@gmail.com</td>
+                    </tr>
+    
+                </tbody>
+                
+
+            </table>
+            <br>
+            
+            <div class='counter'><a>Number of products: 234</a></div>
+            
+            <a href="AddProduct.html">
+                <center><button class="normal"><i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Add product</button></center>
+            </a>
+    
+        </section>
+
+        
+        <br><br><br>
+        <hr>
+        <br><br><br>
+
+        
+
+        <section id="cart" class="section-p1">
+
+            <h2 id="my-products">My products</h2>
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>PRODUCT</td>
+                        <td>NAME</td>
+                        <td>PRICE</td>
+                        <td style='padding-right: 60px;'>STOCK</td>
+                        <td>
+                            
+                            <div class='counter'><a>ashfaaqrifath2@gmail.com</a></div>
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                </thead>
+    
+                
+                <tbody>
+                
+                    <tr>
+                        <td><img src="img/products/Redmi-13c-simplytek-lk_610x_crop_center(1).png"></td>
+    
+                        <td>Xiaomi Redmi 13C</td>
+                        <td>Rs. 70,000</td>
+                        <td style='padding-right: 100px;'>45 items left</td>
+
+                        <td>
+                        <a href='EditProduct.html'>
+                            <button class="normal"><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;Edit</button>
+                        </a></td>
+
+                        <td>
+                            <form action='' method="post">
+                                <button type="submit" class="normal" name="deleteProductBtn"><i class="fa-solid fa-trash"></i>&nbsp;&nbsp;Remove</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="img/products/Redmi-13c-simplytek-lk_610x_crop_center(1).png"></td>
+    
+                        <td>Xiaomi Redmi 13C</td>
+                        <td>Rs. 70,000</td>
+                        <td style='padding-right: 100px;'>45 items left</td>
+
+                        <td>
+                        <a href='EditProduct.html'>
+                            <button class="normal"><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;Edit</button>
+                        </a></td>
+
+                        <td>
+                            <form action='' method="post">
+                                <button type="submit" class="normal" name="deleteProductBtn"><i class="fa-solid fa-trash"></i>&nbsp;&nbsp;Remove</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="img/products/Redmi-13c-simplytek-lk_610x_crop_center(1).png"></td>
+    
+                        <td>Xiaomi Redmi 13C</td>
+                        <td>Rs. 70,000</td>
+                        <td style='padding-right: 100px;'>45 items left</td>
+
+                        <td>
+                        <a href='EditProduct.html'>
+                            <button class="normal"><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;Edit</button>
+                        </a></td>
+
+                        <td>
+                            <form action='' method="post">
+                                <button type="submit" class="normal" name="deleteProductBtn"><i class="fa-solid fa-trash"></i>&nbsp;&nbsp;Remove</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="img/products/Redmi-13c-simplytek-lk_610x_crop_center(1).png"></td>
+    
+                        <td>Xiaomi Redmi 13C</td>
+                        <td>Rs. 70,000</td>
+                        <td style='padding-right: 100px;'>45 items left</td>
+
+                        <td>
+                        <a href='EditProduct.html'>
+                            <button class="normal"><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;Edit</button>
+                        </a></td>
+
+                        <td>
+                            <form action='' method="post">
+                                <button type="submit" class="normal" name="deleteProductBtn"><i class="fa-solid fa-trash"></i>&nbsp;&nbsp;Remove</button>
+                            </form>
+                        </td>
+                    </tr>
+    
+                </tbody>
+                
+
+            </table>
+            <br>
+            
+            <div class='counter'><a>Number of products: 234</a></div>
+            
+            <a href="AddProduct.html">
+                <center><button class="normal"><i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Add product</button></center>
+            </a>
+    
+        </section>
+
+        
+
+        <br><br><br>
+        <hr>
+        <br><br>
+
+
+
+        <br><br>
+        <section id="cart" class="section-p1">
+
+            <h2 id="orders">Customer orders</h2>
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td style='font-weight: 600; color: #ff0000;'>ORDER ID</td>
+                        <td style='color: #ff0000;'>PRODUCTS</td>
+                        <td style='color: #ff0000;'>PAYMENT</td>
+                        <td style='color: #ff0000; padding-right: 120px;'>DATE</td>
+                        <td style='color: #ff0000; padding-right: 10px;'>EMAIL</td>
+                        <td></td>
+                    </tr>
+                </thead>
+
+
+                <tbody>
+                    <tr>
+                        <td style='font-weight: 600;'>#2345</td>
+                        <td style='padding: 15px 0px 15px;'>Xiaomi Redmi 13C</td>
+                        <td>Rs. 70,000</td>
+                        <td style='padding-right: 150px;'>2024-05-19</td>
+                        <td style='font-size: 10px; padding-right: 150px;'>johndoe@gmail.com</td>
+                        
+                        <td style='padding: 20px 0px 20px 0px;'>
+                            <a href='#'>
+                                <button class="normal">Processing</button>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style='font-weight: 600;'>#2345</td>
+                        <td style='padding: 15px 0px 15px;'>Xiaomi Redmi 13C</td>
+                        <td>Rs. 70,000</td>
+                        <td style='padding-right: 150px;'>2024-05-19</td>
+                        <td style='font-size: 10px; padding-right: 150px;'>johndoe@gmail.com</td>
+                        
+                        <td style='padding: 20px 0px 20px 0px;'>
+                            <a href='#'>
+                                <button class="normal">Processing</button>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style='font-weight: 600;'>#2345</td>
+                        <td style='padding: 15px 0px 15px;'>Xiaomi Redmi 13C</td>
+                        <td>Rs. 70,000</td>
+                        <td style='padding-right: 150px;'>2024-05-19</td>
+                        <td style='font-size: 10px; padding-right: 150px;'>johndoe@gmail.com</td>
+                        
+                        <td style='padding: 20px 0px 20px 0px;'>
+                            <a href='#'>
+                                <button class="normal">Processing</button>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style='font-weight: 600;'>#2345</td>
+                        <td style='padding: 15px 0px 15px;'>Xiaomi Redmi 13C</td>
+                        <td>Rs. 70,000</td>
+                        <td style='padding-right: 150px;'>2024-05-19</td>
+                        <td style='font-size: 10px; padding-right: 150px;'>johndoe@gmail.com</td>
+                        
+                        <td style='padding: 20px 0px 20px 0px;'>
+                            <a href='#'>
+                                <button class="normal">Processing</button>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style='font-weight: 600;'>#2345</td>
+                        <td style='padding: 15px 0px 15px;'>Xiaomi Redmi 13C</td>
+                        <td>Rs. 70,000</td>
+                        <td style='padding-right: 150px;'>2024-05-19</td>
+                        <td style='font-size: 10px; padding-right: 150px;'>johndoe@gmail.com</td>
+                        
+                        <td style='padding: 20px 0px 20px 0px;'>
+                            <a href='#'>
+                                <button class="normal">Processing</button>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <br>
+            
+            <div class='counter'><a>Number of orders: 105</a></div>
+            
+
+        </section>
+    
+
+
+
+
+        <br><br><br>
+        <hr>
+        <br><br>
+
+
+        <section id="cart" class="section-p1">
+
+            <h2 id="users">Manage users</h2>
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td style='font-weight: 600; color: #ff0000;'>USERNAME</td>
+                        <td style='color: #ff0000;'>EMAIL</td>
+                        <td style='color: #ff0000;'>PHONE</td>
+                        <td style='color: #ff0000;'>ORDERS</td>
+                        <td></td>
+                    </tr>
+                </thead>
+
+
+                <tbody>
+                    <tr>
+                        <td style='font-weight: 600;'>Ashfaaq Rifath</td>
+                        <td style='font-weight: 600;'>ashfaaqrifath2@gmail.com</td>
+                        <td style='font-weight: 600;'>+94 74 104 0292</td>
+                        <td style='font-weight: 600;'>26</td>
+                        
+                        <td style='padding: 20px 0px 20px 0px;'>
+                            <form action='' method="post">
+                                <button type="submit" class="normal" name="deleteUserBtn"><i class="fa-solid fa-trash"></i>&nbsp;&nbsp;Remove</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style='font-weight: 600;'>Ashfaaq Rifath</td>
+                        <td style='font-weight: 600;'>ashfaaqrifath2@gmail.com</td>
+                        <td style='font-weight: 600;'>+94 74 104 0292</td>
+                        <td style='font-weight: 600;'>26</td>
+                        
+                        <td style='padding: 20px 0px 20px 0px;'>
+                            <form action='' method="post">
+                                <button type="submit" class="normal" name="deleteUserBtn"><i class="fa-solid fa-trash"></i>&nbsp;&nbsp;Remove</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style='font-weight: 600;'>Ashfaaq Rifath</td>
+                        <td style='font-weight: 600;'>ashfaaqrifath2@gmail.com</td>
+                        <td style='font-weight: 600;'>+94 74 104 0292</td>
+                        <td style='font-weight: 600;'>26</td>
+                        
+                        <td style='padding: 20px 0px 20px 0px;'>
+                            <form action='' method="post">
+                                <button type="submit" class="normal" name="deleteUserBtn"><i class="fa-solid fa-trash"></i>&nbsp;&nbsp;Remove</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style='font-weight: 600;'>Ashfaaq Rifath</td>
+                        <td style='font-weight: 600;'>ashfaaqrifath2@gmail.com</td>
+                        <td style='font-weight: 600;'>+94 74 104 0292</td>
+                        <td style='font-weight: 600;'>26</td>
+                        
+                        <td style='padding: 20px 0px 20px 0px;'>
+                            <form action='' method="post">
+                                <button type="submit" class="normal" name="deleteUserBtn"><i class="fa-solid fa-trash"></i>&nbsp;&nbsp;Remove</button>
+                            </form>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+                
+            </table>
+            <br>
+            
+            <div class='counter'><a>Number of users: 145</a></div>
+            
+
+        </section>
+        
+
+
+
+        <br><br><br><br>
+        <div class="copyright">
+            <br>
+            <p>Copyright © 2024 <a href="index.html">Novatech</a> - Developed by Ashfaaq Rifath</p>
+        </div>
+        <br><br>
+
+    </section>
+
+
+
+</body>
+</html>

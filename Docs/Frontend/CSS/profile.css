@@ -1,0 +1,304 @@
+/* PROFILE PAGE */
+
+#page-header{
+    background-image: url("/img/banner/b1.png");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2{
+    color: #ffffff;
+    font-size: 60px;
+}
+
+#page-header p{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: 50px auto;
+}
+
+.profile-info,
+.info-section {
+    flex: 1 0 300px;
+    padding: 30px;
+    border-radius: 6px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-info h1{
+    font-size: 35px;
+}
+
+.user-avatar {
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-section h2{
+    margin-top: 0;
+    font-size: 35px;
+    padding-bottom: 15px;
+    color: #ff0000;
+}
+
+.info-section ul{
+    list-style: none;
+    padding: 0;
+}
+
+.info-section li{
+    margin-bottom: 10px;
+}
+
+.info-section span:first-child{
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.user-data a{
+    text-decoration: none;
+}
+
+/* wishlist and order history reused style */
+
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img{
+    width: 100px;
+}
+
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+    font-size: 15.5px;
+}
+
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+    font-size: 15.5px;
+    font-weight: 600;
+}
+
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+    font-size: 15.5px;
+    font-weight: 600;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+    font-size: 15.5px;
+    font-weight: 600;
+}
+
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+    background: rgba(52, 0, 0, 0.271);
+    border: 1px solid rgba(255, 255, 255, 0.409);
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+#cart table td:nth-child(5) input:focus{
+    border: 1px solid #ff0000;
+}
+
+#cart table td:nth-child(6){
+    color: #ff0000;
+    font-weight: 600;
+}
+
+#cart table tr:nth-child(1){
+    border: 1px solid #c7c7c7;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table tr:nth-child(2),
+#cart table tr:nth-child(3){
+    border: 1px solid #c7c7c7;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+#cart tr:hover {
+    background-color: #ededed;
+    transition: 0.3s ease;
+}
+
+#cart table thead td{
+    font-weight: 700;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td{
+    padding-top: 15px;
+}
+
+#cart table tbody td{
+    font-size: 13px;
+}
+
+#cart i{
+    font-size: 18px;
+}
+
+#cart h2{
+    color: #ff0000;
+    font-size: 50px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+
+
+/* edit profile popup, reused styles */
+
+.pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.products-preview{
+    position: fixed;
+    top:0; left:0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(55px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-preview .preview{
+    display: none;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.222);
+    border: 2px solid rgba(255, 255, 255, 0.508);
+    border-radius: 25px;
+    position: relative;
+    height: 500px;
+}
+
+.products-preview .preview.active{
+    display: flex;
+}
+
+/* close popup */
+
+.products-preview .preview .fa-times{
+    position: absolute;
+    top:1rem; right:1.5rem;
+    cursor: pointer;
+    color:#444;
+    font-size: 20px;
+}
+
+.update-profile form img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: left;
+}
+
+.wrapper button{
+    width: 30%;
+    font-size: 15.5px;
+}
+
+.update-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.update-profile form{
+    text-align: center;
+    width: 700px;
+    text-align: center;
+}
+
+.update-profile form .flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.update-profile form .flex .inputBox{
+    width: 49%;
+}
+
+.update-profile form .flex .inputBox .box{
+    width: 100%;
+    border-radius: 25px;
+    background: rgba(52, 0, 0, 0.271);
+    padding:12px 14px;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.inputBox input:focus{
+    border: 1px solid #ff0000;
+    transition: 0.3s ease;
+}
+
+.inputBox input::placeholder{
+    color: #ffffff;
+    padding-left: 10px;
+}
+
