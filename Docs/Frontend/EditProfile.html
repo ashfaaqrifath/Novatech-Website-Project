@@ -1,11 +1,3 @@
-<?php
-session_start();
-	if(!isset($_SESSION["email"])){
-		header("Location:login.html");
-	}
-?>
-
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,25 +13,6 @@ session_start();
 
 <body style="background-image: url('img/login1.png');">
 
-    <?php
-        
-        $id = $_GET["id"];
-        
-        $con = mysqli_connect("localhost", "root", "", "novatech_database", "3306");
-
-        if (!$con) {
-            die("Sorry, you can't connect into the database.");
-        }
-        
-        $sql = "SELECT * FROM `user_tbl` WHERE `userID`=". $id;
-        
-        $result = mysqli_query($con, $sql);
-        $row = mysqli_fetch_assoc($result);
-        
-    ?>
-
-
-
     <section id="product1" class="section-p1">
 
         <a href="profile.html">
@@ -49,24 +22,24 @@ session_start();
         <div class="wrapper">
 
             <div class="update-profile">
-                <form method="post" action="EditHandler.php?id=<?php echo $id; ?>" enctype="multipart/form-data">
+                <form method="post" action="" enctype="multipart/form-data">
                     <h1><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Edit profile</h1>
                     <br>
                     <div class="flex">
                 
                         <div class="inputBox">
 
-                            <input type="text" name="txtName" placeholder="Username *" value="<?php echo $row["name"]; ?>" class="box" required>
-                            <input type="text" name="txtEmail" placeholder="Email *" value="<?php echo $row["email"]; ?>" class="box" required>
-                            <input type="text" name="txtPhone" placeholder="Contact number" value="<?php echo $row["contactNumber"]; ?>" class="box">
+                            <input type="text" name="txtName" placeholder="Username *" value="Ashfaaq Rifath" class="box" required>
+                            <input type="text" name="txtEmail" placeholder="Email *" value="ashfaaq.rifath2@gmail.com" class="box" required>
+                            <input type="text" name="txtPhone" placeholder="Contact number" value="0741040292" class="box">
             
                         </div>
 
                         <div class="inputBox">
 
-                            <input type="text" name="txtAddress" placeholder="Address *" value="<?php echo $row["address"]; ?>" class="box" required>
+                            <input type="text" name="txtAddress" placeholder="Address *" value="Sri saranankara road, Dehiwala" class="box" required>
                             <input type="text" name="txtPassword" placeholder="Change password *" class="box" required>
-                            <input type="file" name="imageFile" placeholder="Upload an image" value="<?php echo $row["imagePath"];?>" class="box" required>
+                            <input type="file" name="imageFile" placeholder="Upload an image" value="" class="box" required>
 
                         </div>
 
